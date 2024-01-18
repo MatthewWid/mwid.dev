@@ -6,6 +6,7 @@ import github from "@/assets/images/icons/github.svg";
 import codepen from "@/assets/images/icons/codepen.svg";
 import email from "@/assets/images/icons/email.svg";
 import styles from "./hero.module.scss";
+import {ScrollIndicator} from "./ScrollIndicator";
 
 export const Hero = () => (
 	<section className={clsx(styles.hero, montserrat.className)}>
@@ -44,10 +45,6 @@ export const Hero = () => (
 				</div>
 			</div>
 		</div>
-		<div
-			className={styles["scroll-indicator"]}
-			role="button"
-			aria-label="Scroll down"
-		/>
+		<ScrollIndicator />
 	</section>
 );

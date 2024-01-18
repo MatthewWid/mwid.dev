@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import {clsx} from "clsx";
+import {onClickSmoothScroll} from "@/utils/on-click-smooth-scroll";
 import {montserrat} from "@/assets/fonts/montserrat";
 import hamburger from "@/assets/images/icons/hamburger.svg";
 import styles from "./navigation.module.scss";
@@ -8,7 +11,7 @@ import {NavLink} from "./NavLink";
 export const Navigation = () => (
 	<header className={styles.navigation}>
 		<h1 className={clsx(montserrat.className, styles.logo)}>
-			<a href="/#" data-scroll="hero">
+			<a href="/#" onClick={onClickSmoothScroll}>
 				M<span className={styles.dot}>&bull;</span>W
 			</a>
 		</h1>
