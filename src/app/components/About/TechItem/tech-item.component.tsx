@@ -1,19 +1,17 @@
 import Image from "next/image";
 import styles from "./tech-item.module.scss";
-import {keyToImage} from "./tech-item.constants";
+import {techIdToInfo} from "@/config/tech.constants";
 
 export interface TechItemProps {
-	name: string;
-	imageKey: keyof typeof keyToImage;
-	url?: string;
+	id: string;
 }
 
-export const TechItem = ({name, imageKey, url}: TechItemProps) => (
-	<a href={url} title={name} target="_blank" className={styles.link}>
-		<Image
-			src={keyToImage[imageKey]}
-			alt={`${name} logo`}
-			className={styles.image}
-		/>
-	</a>
-);
+export const TechItem = ({id}: TechItemProps) => {
+	const {name, url, logo} = techIdToInfo[id];
+
+	return (
+		<a href={url} title={name} target="_blank" className={styles.link}>
+			<Image src={logo} alt={`${name} logo`} className={styles.image} />
+		</a>
+	);
+};

@@ -2,9 +2,8 @@ import Image from "next/image";
 import {clsx} from "clsx";
 import {montserrat} from "@/assets/fonts/montserrat";
 import mapmarker from "@/assets/images/icons/mapmarker.svg";
-import australia from "@/assets/images/icons/australia.svg";
 import styles from "./about.module.scss";
-import {techItems} from "./about.constants";
+import {techList} from "./about.constants";
 import {TechItem} from "./TechItem";
 
 export const About = () => (
@@ -52,8 +51,8 @@ export const About = () => (
 			<div className={styles.content}>
 				<h1 className={montserrat.className}>My tech.</h1>
 				<div className={styles["tech-list"]}>
-					{techItems.map((props) => (
-						<TechItem {...props} key={props.name} />
+					{techList.map((id) => (
+						<TechItem key={id} id={id} />
 					))}
 				</div>
 			</div>
