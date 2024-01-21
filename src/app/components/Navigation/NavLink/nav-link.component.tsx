@@ -9,12 +9,13 @@ export interface NavLinkProps {
 	children: ReactNode;
 }
 
-export const NavLink = ({to, children}: NavLinkProps) => (
+export const NavLink = ({to, children, ...rest}: NavLinkProps) => (
 	<li className={clsx(sourceSans.className, styles["list-item"])}>
 		<a
 			href={to}
 			className={styles["list-item-link"]}
 			onClick={onClickSmoothScroll}
+			{...rest}
 		>
 			{children}
 		</a>

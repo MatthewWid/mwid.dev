@@ -1,4 +1,5 @@
 import {StaticImageData} from "next/image";
+import javascript from "@/assets/images/tech/javascript.png";
 import aws from "@/assets/images/tech/aws.svg";
 import babel from "@/assets/images/tech/babel.svg";
 import bitbucket from "@/assets/images/tech/bitbucket.svg";
@@ -6,6 +7,7 @@ import git from "@/assets/images/tech/git.svg";
 import github from "@/assets/images/tech/github.svg";
 import koa from "@/assets/images/tech/koa.svg";
 import mongodb from "@/assets/images/tech/mongodb.svg";
+import mongoose from "@/assets/images/tech/mongoose.png";
 import node from "@/assets/images/tech/node.png";
 import npm from "@/assets/images/tech/npm.svg";
 import php from "@/assets/images/tech/php.svg";
@@ -13,6 +15,7 @@ import react from "@/assets/images/tech/react.svg";
 import redux from "@/assets/images/tech/redux.svg";
 import sass from "@/assets/images/tech/sass.png";
 import socketIo from "@/assets/images/tech/socket-io.svg";
+import mysql from "@/assets/images/tech/mysql.svg";
 import sqlite from "@/assets/images/tech/sqlite.svg";
 import ts from "@/assets/images/tech/ts.png";
 import webpack from "@/assets/images/tech/webpack.svg";
@@ -23,6 +26,7 @@ import docker from "@/assets/images/tech/docker.svg";
 import python from "@/assets/images/tech/python.svg";
 import storybook from "@/assets/images/tech/storybook.svg";
 import cypress from "@/assets/images/tech/cypress.svg";
+import cloudinary from "@/assets/images/tech/cloudinary.svg";
 
 export interface TechInfo {
 	name: string;
@@ -31,6 +35,11 @@ export interface TechInfo {
 }
 
 export const techIdToInfo: Record<string, TechInfo> = {
+	javascript: {
+		name: "JavaScript",
+		url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+		logo: javascript,
+	},
 	react: {
 		name: "React",
 		url: "https://reactjs.org/",
@@ -76,6 +85,11 @@ export const techIdToInfo: Record<string, TechInfo> = {
 		url: "https://www.mongodb.com/",
 		logo: mongodb,
 	},
+	mongoose: {
+		name: "Mongoose",
+		url: "https://mongoosejs.com/",
+		logo: mongoose,
+	},
 	koa: {
 		name: "Koa",
 		url: "https://koajs.com/",
@@ -100,6 +114,11 @@ export const techIdToInfo: Record<string, TechInfo> = {
 		name: "SQLite",
 		url: "https://www.sqlite.org/",
 		logo: sqlite,
+	},
+	mysql: {
+		name: "MySQL",
+		url: "https://www.mysql.com/",
+		logo: mysql,
 	},
 	webpack: {
 		name: "webpack",
@@ -150,5 +169,10 @@ export const techIdToInfo: Record<string, TechInfo> = {
 		name: "Python",
 		url: "https://www.python.org/",
 		logo: python,
+	},
+	cloudinary: {
+		name: "Cloudinary",
+		url: "https://cloudinary.com/",
+		logo: cloudinary,
 	},
 };

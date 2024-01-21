@@ -7,6 +7,9 @@ import {MouseEventHandler} from "react";
  * instantly scroll to the target element.
  *
  * If there is no target element it will scroll to the top of the page.
+ *
+ * The listened-on element may specify where in the target element to scroll to with a
+ * `data-scroll-position` attribute - either `center` (the default), `start`, `end` or `nearest`.
  */
 export const onClickSmoothScroll: MouseEventHandler<HTMLAnchorElement> = (
 	event
@@ -26,7 +29,10 @@ export const onClickSmoothScroll: MouseEventHandler<HTMLAnchorElement> = (
 			if (targetElement) {
 				targetElement.scrollIntoView({
 					behavior: "smooth",
-					block: "center",
+					block:
+						(event.currentTarget.dataset[
+							"scrollPosition"
+						] as ScrollLogicalPosition) ?? "center",
 				});
 
 				history.replaceState(null, "", toUrl.hash);

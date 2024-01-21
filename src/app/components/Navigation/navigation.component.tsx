@@ -11,7 +11,11 @@ import {NavLink} from "./NavLink";
 export const Navigation = () => (
 	<header className={styles.navigation}>
 		<h1 className={clsx(montserrat.className, styles.logo)}>
-			<a href="/#" onClick={onClickSmoothScroll}>
+			<a
+				href="/#"
+				onClick={onClickSmoothScroll}
+				data-scroll-position="start"
+			>
 				M<span className={styles.dot}>&bull;</span>W
 			</a>
 		</h1>
@@ -20,9 +24,15 @@ export const Navigation = () => (
 		</button>
 		<nav aria-label="Main menu">
 			<ul className={styles["nav-list"]}>
-				<NavLink to="/#about-me">about me</NavLink>
-				<NavLink to="/#projects">projects</NavLink>
-				<NavLink to="/#contact">contact</NavLink>
+				<NavLink to="/#about-me" data-scroll-position="center">
+					about me
+				</NavLink>
+				<NavLink to="/#projects" data-scroll-position="start">
+					projects
+				</NavLink>
+				<NavLink to="/#contact" data-scroll-position="center">
+					contact
+				</NavLink>
 			</ul>
 		</nav>
 	</header>

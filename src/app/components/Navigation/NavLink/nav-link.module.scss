@@ -1,6 +1,5 @@
 .list-item {
 	display: inline-block;
-	font-family: "Source Sans Pro", sans-serif;
 	font-size: 1.1rem;
 	color: var(--darkest-grey);
 }
@@ -8,18 +7,19 @@
 .list-item-link {
 	padding: 1rem;
 	position: relative;
-}
 
-.list-item-link:after {
-	content: "";
-	position: absolute;
-	left: 0;
-	top: 100%;
-	width: 0%;
-	height: 1px;
-	background-color: var(--darkest-grey);
-	transition: width 0.1s ease-out;
-}
-.list-item-link:hover:after {
-	width: 100%;
+	&:after {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 100%;
+		width: 0%;
+		height: 1px;
+		background-color: var(--darkest-grey);
+		transition: width 0.1s ease-out;
+	}
+
+	&:hover:after {
+		width: 100%;
+	}
 }

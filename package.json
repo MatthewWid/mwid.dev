@@ -2,7 +2,7 @@
 	"name": "mwid.dev",
 	"version": "0.1.0",
 	"private": true,
-	"author": "Matthew Widdicombe <matthew.widdi@gmail.com>",
+	"author": "Matthew Widdicombe",
 	"license": "MIT",
 	"scripts": {
 		"dev": "next dev",

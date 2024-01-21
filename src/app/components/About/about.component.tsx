@@ -10,7 +10,7 @@ export const About = () => (
 	<>
 		<section className={styles.section} id="about-me">
 			<div className={styles.content}>
-				<h1 className={montserrat.className}>Who I am</h1>
+				<h2 className={montserrat.className}>Who I am</h2>
 				<p>Hi there, I&apos;m Matt (he/him).</p>
 				<p>
 					I&apos;m a{" "}
@@ -47,9 +47,9 @@ export const About = () => (
 				</p>
 			</div>
 		</section>
-		<section className={styles.section} id="my-tech">
+		<section className={styles.section} id="tech">
 			<div className={styles.content}>
-				<h1 className={montserrat.className}>My tech.</h1>
+				<h2 className={montserrat.className}>My tech.</h2>
 				<div className={styles["tech-list"]}>
 					{techList.map((id) => (
 						<TechItem key={id} id={id} />
