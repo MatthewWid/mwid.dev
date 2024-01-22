@@ -1,4 +1,4 @@
-import {MouseEventHandler, ReactNode} from "react";
+import {ReactNode} from "react";
 import {clsx} from "clsx";
 import {onClickSmoothScroll} from "@/utils/on-click-smooth-scroll";
 import {sourceSans} from "@/assets/fonts/source-sans";
