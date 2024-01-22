@@ -1,0 +1,17 @@
+.projects {
+	> div:nth-of-type(even) {
+		flex-direction: row;
+	}
+
+	> div:nth-of-type(odd) {
+		flex-direction: row-reverse;
+	}
+}
+
+@media (max-width: 950px) {
+	.projects {
+		> div {
+			flex-direction: column !important;
+		}
+	}
+}
