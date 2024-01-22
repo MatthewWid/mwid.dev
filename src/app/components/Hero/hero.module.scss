@@ -23,6 +23,12 @@
 	margin-bottom: 4px;
 }
 
+@media (max-width: 950px) {
+	.fullname {
+		font-size: 3.2rem;
+	}
+}
+
 .links {
 	display: inline-grid;
 	align-items: center;
