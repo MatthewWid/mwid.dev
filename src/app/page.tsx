@@ -1,14 +1,14 @@
-import {Hero} from "./components/Hero";
-import {About} from "./components/About";
-import {Projects} from "./components/Projects";
+import {Title} from "./features/title";
+import {About} from "./features/about";
+import {ProjectList} from "./features/projects";
 import {Contact} from "./components/Contact";
 
 export default function RootPage() {
 	return (
 		<>
-			<Hero />
+			<Title />
 			<About />
-			<Projects />
+			<ProjectList />
 			<Contact />
 		</>
 	);

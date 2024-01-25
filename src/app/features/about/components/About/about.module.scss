@@ -1,0 +1,26 @@
+.section {
+	width: 60%;
+	margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+	.section {
+		width: 85%;
+	}
+}
+
+.content {
+	display: grid;
+	gap: 1.6rem;
+	margin: 40vh 0;
+
+	h2 {
+		font-size: 3.6rem;
+		font-weight: 600;
+	}
+
+	p {
+		position: relative;
+		font-size: 1.2rem;
+	}
+}

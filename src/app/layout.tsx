@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 			url: "https://i.ibb.co/Hpw91n8/logo-banner.png",
 			width: 1200,
 			height: 630,
-			alt: "Banner with website logo"
+			alt: "Banner with website logo",
 		},
 	},
 };

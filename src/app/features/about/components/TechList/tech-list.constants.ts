@@ -1,4 +1,4 @@
-export const techList: string[] = [
+export const tech: string[] = [
 	"react",
 	"redux",
 	"node",

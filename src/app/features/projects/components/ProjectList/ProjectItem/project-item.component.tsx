@@ -1,29 +1,16 @@
+import Image from "next/image";
 import {clsx} from "clsx";
 import {montserrat} from "@/assets/fonts/montserrat";
 import repoLinkIcon from "@/assets/images/icons/code.svg";
 import demoLinkIcon from "@/assets/images/icons/globe.svg";
 import docsLinkIcon from "@/assets/images/icons/document.svg";
 import {techIdToInfo} from "@/config/tech.constants";
-import styles from "./project.module.scss";
-import Image, {StaticImageData} from "next/image";
+import styles from "./project-item.module.scss";
+import {Project} from "../../types/project.type";
 
-export interface ProjectProps {
-	id: string;
-	title: string;
-	description: string;
-	color: string;
-	preview: {
-		image: StaticImageData;
-		fullscreen?: boolean;
-		width?: number;
-	};
-	techIds: string[];
-	repo: string;
-	demo?: string;
-	docs?: string;
-}
+export interface ProjectProps extends Project {}
 
-export const Project = ({
+export const ProjectItem = ({
 	title,
 	description,
 	color,

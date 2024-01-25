@@ -3,9 +3,9 @@ import bonkSkins from "@/assets/images/previews/bonkskins.png";
 import redditModBot from "@/assets/images/previews/reddit.png";
 import stratRoulette from "@/assets/images/previews/stratroulette.jpg";
 import whirl from "@/assets/images/previews/whirl.png";
-import {ProjectProps} from "./Project/project.component";
+import {Project} from "../types/project.type";
 
-export const projectList: ProjectProps[] = [
+export const projectList: Project[] = [
 	{
 		id: "shoutout",
 		title: "Shoutout",
