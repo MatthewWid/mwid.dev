@@ -1,8 +1,8 @@
 import type {Metadata} from "next";
 import "reset-css";
 import "./globals.scss";
-import {roboto} from "./assets/fonts/roboto";
-import {Navigation} from "./components/Navigation";
+import {roboto} from "@/assets/fonts/roboto";
+import {Navigation} from "@/components/Navigation";
 
 export const metadata: Metadata = {
 	title: "Matthew Widdicombe",

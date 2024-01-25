@@ -6,7 +6,7 @@ import demoLinkIcon from "@/assets/images/icons/globe.svg";
 import docsLinkIcon from "@/assets/images/icons/document.svg";
 import {techIdToInfo} from "@/config/tech.constants";
 import styles from "./project-item.module.scss";
-import {Project} from "../../types/project.type";
+import {Project} from "../../../types/project.type";
 
 export interface ProjectProps extends Project {}
 
@@ -35,7 +35,9 @@ export const ProjectItem = ({
 			>
 				<Image
 					src={preview.image}
-					alt={`${title} preview screenshot`}
+					alt={`${title} preview screenshot or logo`}
+					width={0}
+					height={0}
 				/>
 			</div>
 		</div>
