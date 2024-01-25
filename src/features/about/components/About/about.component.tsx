@@ -1,12 +1,12 @@
 import styles from "./about.module.scss";
-import {WhoAmI} from "../WhoAmI";
+import {WhoIAm} from "../WhoIAm";
 import {TechList} from "../TechList";
 
 export const About = () => (
 	<>
 		<section className={styles.section} id="about-me">
 			<div className={styles.content}>
-				<WhoAmI />
+				<WhoIAm />
 			</div>
 		</section>
 		<section className={styles.section} id="tech">

@@ -2,9 +2,9 @@ import Image from "next/image";
 import {clsx} from "clsx";
 import {montserrat} from "@/assets/fonts/montserrat";
 import mapmarker from "@/assets/images/icons/mapmarker.svg";
-import styles from "./who-am-i.module.scss";
+import styles from "./who-i-am.module.scss";
 
-export const WhoAmI = () => (
+export const WhoIAm = () => (
 	<>
 		<h2 className={montserrat.className}>Who I am</h2>
 		<p>Hi there, I&apos;m Matt (he/him).</p>
