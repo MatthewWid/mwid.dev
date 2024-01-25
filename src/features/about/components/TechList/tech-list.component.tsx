@@ -11,5 +11,12 @@ export const TechList = () => (
 				<TechItem key={id} id={id} />
 			))}
 		</div>
+		<p className={styles["btw"]}>
+			... and I use{" "}
+			<a href="https://youtu.be/9n1dtmzqnCU" target="_blank">
+				vim
+			</a>{" "}
+			btw
+		</p>
 	</>
 );
