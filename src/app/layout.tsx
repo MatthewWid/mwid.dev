@@ -3,6 +3,7 @@ import "reset-css";
 import "./globals.scss";
 import {roboto} from "@/assets/fonts/roboto";
 import {Navigation} from "@/components/Navigation";
+import {Contact} from "@/components/Contact";
 
 export const metadata: Metadata = {
 	title: "Matthew Widdicombe",
@@ -26,6 +27,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
 			<body className={roboto.className}>
 				<Navigation />
 				<main>{children}</main>
+				<Contact />
 			</body>
 		</html>
 	);
