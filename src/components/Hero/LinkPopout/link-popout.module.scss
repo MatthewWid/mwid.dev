@@ -1,0 +1,16 @@
+.email {
+	display: flex;
+	align-items: center;
+
+	p {
+		width: 0ch;
+		margin: 0 16px;
+		transform: translateY(-2px);
+		transition: width 0.2s ease;
+		overflow: hidden;
+	}
+
+	&:hover p {
+		width: 25ch;
+	}
+}

@@ -1,0 +1,13 @@
+.title {
+	color: var(--darkest-grey);
+	font-size: 5rem;
+	font-weight: 600;
+	margin-left: -6px;
+	margin-bottom: 4px;
+}
+
+@media (max-width: 950px) {
+	.title {
+		font-size: 3.2rem;
+	}
+}

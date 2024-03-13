@@ -2,6 +2,11 @@ import {ReactElement, ReactNode} from "react";
 import {clsx} from "clsx";
 import {montserrat} from "@/assets/fonts/montserrat";
 import {ScrollIndicatorProps} from "@/components/ScrollIndicator";
+import {Title} from "./Title";
+import {Subtext} from "./Subtext";
+import {LinkGroup} from "./LinkGroup";
+import {LinkIcon} from "./LinkIcon";
+import {LinkPopout} from "./LinkPopout";
 import styles from "./hero.module.scss";
 
 export interface HeroProps {
@@ -15,3 +20,9 @@ export const Hero = ({children, scrollIndicator}: HeroProps) => (
 		{scrollIndicator}
 	</section>
 );
+
+Hero.Title = Title;
+Hero.Subtext = Subtext;
+Hero.LinkGroup = LinkGroup;
+Hero.LinkIcon = LinkIcon;
+Hero.LinkPopout = LinkPopout;
