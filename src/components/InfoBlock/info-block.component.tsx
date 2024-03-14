@@ -18,7 +18,7 @@ export interface InfoBlockLink {
 
 export interface InfoBlockProps {
 	title: string;
-	description: string;
+	description: string | string[];
 	color: string;
 	preview: InfoBlockPreview;
 	techIds?: string[];
@@ -74,7 +74,15 @@ export const InfoBlock = ({
 				) : (
 					heading
 				)}
-				<p className={styles.description}>{description}</p>
+				{Array.isArray(description) ? (
+					description.map((paragraph, index) => (
+						<p key={index} className={styles.description}>
+							{paragraph}
+						</p>
+					))
+				) : (
+					<p className={styles.description}>{description}</p>
+				)}
 				{techIds && (
 					<ul className={styles["tech-list"]}>
 						{techIds.map((id) => (
