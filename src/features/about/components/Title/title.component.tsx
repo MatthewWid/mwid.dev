@@ -1,4 +1,3 @@
-import Image from "next/image";
 import linkedin from "@/assets/images/icons/linkedin.svg";
 import github from "@/assets/images/icons/github.svg";
 import codepen from "@/assets/images/icons/codepen.svg";
