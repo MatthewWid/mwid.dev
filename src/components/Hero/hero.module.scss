@@ -3,9 +3,10 @@
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
+	overflow: hidden;
 }
 
 .content {
-	transform: translateY(-10vh);
-	margin: 0 2.1rem;
+	position: relative;
+	margin: -10vh 2.1rem 0 2.1rem;
 }

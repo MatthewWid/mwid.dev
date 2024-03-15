@@ -48,6 +48,7 @@ export const Navigation = () => {
 					<NavLink to="/#projects" data-scroll-position="start">
 						projects
 					</NavLink>
+					<NavLink to="/resume">resum&eacute;</NavLink>
 					<NavLink to="/#contact" data-scroll-position="center">
 						contact
 					</NavLink>

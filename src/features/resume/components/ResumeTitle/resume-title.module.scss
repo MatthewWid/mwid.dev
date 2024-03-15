@@ -1,0 +1,48 @@
+.rocket {
+	display: inline-block;
+	position: relative;
+	left: 60%;
+	transform: rotateZ(180deg);
+	cursor: pointer;
+	outline: none;
+
+	.plume {
+		opacity: 1;
+		transition: opacity 1.5s ease-out;
+		transform: translateY(24px);
+	}
+
+	&:hover .ship {
+		top: -24px;
+	}
+
+	.ship {
+		position: absolute;
+		top: -20px;
+		left: 0;
+		transition: top 0.2s ease-in-out;
+		opacity: 1;
+	}
+
+	&.launched {
+		pointer-events: none;
+
+		.plume {
+			opacity: 0;
+		}
+
+		.ship {
+			transition:
+				top 1.5s cubic-bezier(0.895, 0.03, 0.685, 0.22),
+				opacity 0.5s 1s;
+			top: -100vh;
+			opacity: 0;
+		}
+	}
+}
+
+@media (max-width: 950px) {
+	.rocket {
+		left: 0%;
+	}
+}

@@ -1,4 +1,4 @@
-.project {
+.info-block {
 	display: flex;
 	min-height: 80vh;
 
@@ -40,16 +40,23 @@
 	}
 }
 
-@media (max-width: 950px) {
-	.preview.fullscreen:after {
-		box-shadow: inset 0 -80px 40px -20px var(--bg-white);
-	}
-}
-
 .image img {
 	display: block;
 	margin: 0 auto;
 	width: 100%;
+}
+
+@media (max-width: 950px) {
+	.preview {
+		&:not(.fullscreen) .image img {
+			width: unset;
+			max-width: 80%;
+		}
+
+		&.fullscreen:after {
+			box-shadow: inset 0 -80px 40px -20px var(--bg-white);
+		}
+	}
 }
 
 .info {
@@ -61,6 +68,11 @@
 	> * {
 		margin-bottom: 1.6rem;
 	}
+}
+
+.subtitle {
+	font-size: 0.9rem;
+	margin-bottom: 1.2rem;
 }
 
 .title {
@@ -113,7 +125,7 @@
 	width: 20px;
 	height: 20px;
 	object-fit: contain;
-	filter: invert(82%);
+	filter: invert(82%) grayscale(1);
 	margin-right: 1ch;
 }
 

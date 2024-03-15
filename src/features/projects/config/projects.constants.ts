@@ -31,6 +31,7 @@ export const projectList: Project[] = [
 	{
 		id: "reddit-mod-bot",
 		title: "Reddit Moderation Bot",
+		subtitle: "Unofficial",
 		description:
 			"Automated bot for tagging, analysing and moderating forum posts, managing user information and storing post information for statistical analysis.",
 		color: "#ff4500",

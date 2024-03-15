@@ -1,4 +1,4 @@
-.projects {
+.info-block-list {
 	> div:nth-of-type(even) {
 		flex-direction: row;
 	}
@@ -9,7 +9,7 @@
 }
 
 @media (max-width: 950px) {
-	.projects {
+	.info-block-list {
 		> div {
 			flex-direction: column !important;
 		}

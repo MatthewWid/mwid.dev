@@ -6,7 +6,10 @@ import {Navigation} from "@/components/Navigation";
 import {Contact} from "@/components/Contact";
 
 export const metadata: Metadata = {
-	title: "Matthew Widdicombe",
+	title: {
+		template: "%s - Matthew Widdicombe",
+		default: "Matthew Widdicombe",
+	},
 	description: "My personal portfolio and digital resume.",
 	openGraph: {
 		title: "Matthew Widdicombe",
