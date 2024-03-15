@@ -15,7 +15,7 @@ export const ResumeTitle = () => {
 	return (
 		<Hero
 			scrollIndicator={
-				<ScrollIndicator to="/resume#jobs"></ScrollIndicator>
+				<ScrollIndicator to="/resume#work"></ScrollIndicator>
 			}
 		>
 			<Hero.Title>Resum&eacute;</Hero.Title>

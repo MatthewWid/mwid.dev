@@ -1,5 +1,6 @@
 import Image, {StaticImageData} from "next/image";
 import {clsx} from "clsx";
+import type * as CSS from "csstype";
 import {montserrat} from "@/assets/fonts/montserrat";
 import {techIdToInfo} from "@/config/tech.constants";
 import styles from "./info-block.module.scss";
@@ -8,6 +9,7 @@ export interface InfoBlockPreview {
 	image: StaticImageData;
 	fullscreen?: boolean;
 	width?: number;
+	render?: CSS.Property.ImageRendering;
 }
 
 export interface InfoBlockLink {
@@ -58,6 +60,7 @@ export const InfoBlock = ({
 					className={styles.image}
 					style={{
 						width: preview.width ? `${preview.width}%` : "100%",
+						imageRendering: preview.render,
 					}}
 				>
 					<Image

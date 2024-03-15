@@ -1,4 +1,6 @@
 import {StaticImageData} from "next/image";
+import html from "@/assets/images/tech/html.svg";
+import css from "@/assets/images/tech/css.svg";
 import javascript from "@/assets/images/tech/javascript.png";
 import aws from "@/assets/images/tech/aws.svg";
 import babel from "@/assets/images/tech/babel.svg";
@@ -27,6 +29,18 @@ import python from "@/assets/images/tech/python.svg";
 import storybook from "@/assets/images/tech/storybook.svg";
 import cypress from "@/assets/images/tech/cypress.svg";
 import cloudinary from "@/assets/images/tech/cloudinary.svg";
+import trello from "@/assets/images/tech/trello.svg";
+import express from "@/assets/images/tech/express.png";
+import nest from "@/assets/images/tech/nest.svg";
+import ecs from "@/assets/images/tech/ecs.svg";
+import ec2 from "@/assets/images/tech/ec2.svg";
+import s3 from "@/assets/images/tech/s3.svg";
+import cdk from "@/assets/images/tech/cdk.png";
+import bamboo from "@/assets/images/tech/bamboo.svg";
+import jira from "@/assets/images/tech/jira.svg";
+import webflow from "@/assets/images/tech/webflow.svg";
+import access from "@/assets/images/tech/access.svg";
+import vba from "@/assets/images/tech/vba.svg";
 
 export interface TechInfo {
 	name: string;
@@ -35,6 +49,16 @@ export interface TechInfo {
 }
 
 export const techIdToInfo: Record<string, TechInfo> = {
+	html: {
+		name: "HTML",
+		url: "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics",
+		logo: html,
+	},
+	css: {
+		name: "CSS",
+		url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+		logo: css,
+	},
 	javascript: {
 		name: "JavaScript",
 		url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
@@ -174,5 +198,65 @@ export const techIdToInfo: Record<string, TechInfo> = {
 		name: "Cloudinary",
 		url: "https://cloudinary.com/",
 		logo: cloudinary,
+	},
+	trello: {
+		name: "Trello",
+		url: "https://trello.com/",
+		logo: trello,
+	},
+	express: {
+		name: "Express",
+		url: "https://expressjs.com/",
+		logo: express,
+	},
+	nest: {
+		name: "Nest",
+		url: "https://nestjs.com/",
+		logo: nest,
+	},
+	ecs: {
+		name: "ECS",
+		url: "https://aws.amazon.com/ecs/",
+		logo: ecs,
+	},
+	ec2: {
+		name: "EC2",
+		url: "https://aws.amazon.com/ec2/",
+		logo: ec2,
+	},
+	s3: {
+		name: "S3",
+		url: "https://aws.amazon.com/s3/",
+		logo: s3,
+	},
+	cdk: {
+		name: "CDK",
+		url: "https://aws.amazon.com/cdk/",
+		logo: cdk,
+	},
+	bamboo: {
+		name: "Bamboo",
+		url: "https://www.atlassian.com/software/bamboo",
+		logo: bamboo,
+	},
+	jira: {
+		name: "Jira",
+		url: "https://www.atlassian.com/software/jira",
+		logo: jira,
+	},
+	webflow: {
+		name: "Webflow",
+		url: "https://webflow.com/",
+		logo: webflow,
+	},
+	access: {
+		name: "Microsoft Access",
+		url: "https://www.microsoft.com/en-au/microsoft-365/access",
+		logo: access,
+	},
+	vba: {
+		name: "Visual Basic for Applications",
+		url: "https://learn.microsoft.com/en-us/office/vba/api/overview/",
+		logo: vba,
 	},
 };
