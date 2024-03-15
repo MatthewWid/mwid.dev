@@ -18,6 +18,7 @@ export interface InfoBlockLink {
 
 export interface InfoBlockProps {
 	title: string;
+	subtitle?: string;
 	description: string | string[];
 	color: string;
 	preview: InfoBlockPreview;
@@ -27,6 +28,7 @@ export interface InfoBlockProps {
 
 export const InfoBlock = ({
 	title,
+	subtitle,
 	description,
 	color,
 	preview,
@@ -74,6 +76,7 @@ export const InfoBlock = ({
 				) : (
 					heading
 				)}
+				{subtitle && <p className={styles.subtitle}>{subtitle}</p>}
 				{Array.isArray(description) ? (
 					description.map((paragraph, index) => (
 						<p key={index} className={styles.description}>
