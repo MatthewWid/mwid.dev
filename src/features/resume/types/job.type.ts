@@ -7,7 +7,7 @@ export interface Job {
 	description: string | string[];
 	color: string;
 	preview: StaticImageData;
-	techIds: string[];
+	techIds?: string[];
 	website?: string;
 	linkedin?: string;
 }

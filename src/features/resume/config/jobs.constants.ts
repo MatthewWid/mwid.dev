@@ -3,6 +3,7 @@ import bitscore from "@/assets/images/previews/bits-core.png";
 import aanda from "@/assets/images/previews/aanda-swim-school.png";
 import eiaustralia from "@/assets/images/previews/eiaustralia.png";
 import afm from "@/assets/images/previews/afm.jpg";
+import mqu from "@/assets/images/previews/mqu.svg";
 import {Job} from "../types/job.type";
 
 export const jobList: Job[] = [
@@ -99,5 +100,19 @@ export const jobList: Job[] = [
 		website: "https://www.australianfoodmicrobiology.com.au/",
 		linkedin:
 			"https://www.linkedin.com/company/australian-food-microbiology/",
+	},
+	{
+		id: "mqu",
+		title: "Bachelor of Information Technology",
+		subtitle:
+			"Major in Web and Mobile App Development — Student — 2018 - 2021",
+		description: [
+			"At Macquarie University, I undertook their flagship information technology course specialising in website and mobile application design and development that provided me with a strong understanding of state-of-the-art web design practices and developing industry-level web applications through a multitude of real-world projects and team-based activities.",
+			"During my studies, I acquired skills in programming, data storage and modelling, networking and cybersecurity, software design and construction and more.",
+		],
+		color: "#D6001C",
+		preview: mqu,
+		website: "https://www.mq.edu.au/",
+		linkedin: "https://www.linkedin.com/school/macquarie-university/",
 	},
 ];

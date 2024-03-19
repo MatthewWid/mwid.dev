@@ -1,8 +1,8 @@
 import websiteLinkIcon from "@/assets/images/icons/globe.svg";
 import linkedinLinkIcon from "@/assets/images/icons/linkedin.svg";
 import {InfoBlockList} from "@/components/InfoBlockList";
-import {jobList} from "../../config/jobs.constants";
 import {InfoBlock, InfoBlockLink} from "@/components/InfoBlock";
+import {jobList} from "../../config/jobs.constants";
 
 export const JobList = () => (
 	<InfoBlockList id="work">
