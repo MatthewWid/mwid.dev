@@ -14,15 +14,14 @@ export const Navigation = () => {
 
 	return (
 		<header className={styles.navigation}>
-			<h1 className={clsx(montserrat.className, styles.logo)}>
-				<a
-					href="/#"
-					onClick={onClickSmoothScroll}
-					data-scroll-position="start"
-				>
-					M<span className={styles.dot}>&bull;</span>W
-				</a>
-			</h1>
+			<a
+				href="/#"
+				onClick={onClickSmoothScroll}
+				data-scroll-position="start"
+				className={clsx(montserrat.className, styles.logo)}
+			>
+				M<span className={styles.dot}>&bull;</span>W
+			</a>
 			<nav className={clsx(styles.menu, isMenuOpen && styles.expanded)}>
 				<button
 					onClick={() =>

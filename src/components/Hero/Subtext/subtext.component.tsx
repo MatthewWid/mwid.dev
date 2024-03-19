@@ -6,5 +6,5 @@ export interface SubtextProps {
 }
 
 export const Subtext = ({children}: SubtextProps) => (
-	<h1 className={styles.subtext}>{children}</h1>
+	<p className={styles.subtext}>{children}</p>
 );

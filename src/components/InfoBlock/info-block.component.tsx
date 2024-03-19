@@ -38,14 +38,14 @@ export const InfoBlock = ({
 	links,
 }: InfoBlockProps) => {
 	const heading = (
-		<h2 className={clsx(montserrat.className, styles.title)}>
+		<h3 className={clsx(montserrat.className, styles.title)}>
 			{title}
 			<div
 				aria-hidden
 				className={styles.accent}
 				style={{backgroundColor: color}}
 			/>
-		</h2>
+		</h3>
 	);
 
 	return (
