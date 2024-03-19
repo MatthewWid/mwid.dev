@@ -1,0 +1,32 @@
+.list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.list-item-link {
+	display: block;
+	padding: 1rem;
+
+	&:hover .list-item-text:after {
+		width: 100%;
+	}
+}
+
+.list-item-text {
+	position: relative;
+	display: block;
+	font-size: 1.1rem;
+
+	&:after {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 100%;
+		width: 0%;
+		height: 1px;
+		background-color: var(--darkest-grey);
+		transition: width 0.1s ease-out;
+	}
+}

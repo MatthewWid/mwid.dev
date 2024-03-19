@@ -4,6 +4,7 @@ import "./globals.scss";
 import {roboto} from "@/assets/fonts/roboto";
 import {Navigation} from "@/components/Navigation";
 import {Contact} from "@/components/Contact";
+import {Footer} from "@/components/Footer";
 
 export const metadata: Metadata = {
 	title: {
@@ -31,6 +32,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
 				<Navigation />
 				<main>{children}</main>
 				<Contact />
+				<Footer />
 			</body>
 		</html>
 	);
