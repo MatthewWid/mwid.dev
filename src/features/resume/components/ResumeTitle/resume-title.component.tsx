@@ -33,7 +33,12 @@ export const ResumeTitle = () => {
 
 	return (
 		<Hero
-			scrollIndicator={<ScrollIndicator to={`/resume${NEXT_ELEMENT}`} />}
+			scrollIndicator={
+				<ScrollIndicator
+					to={`/resume${NEXT_ELEMENT}`}
+					scrollPosition="start"
+				/>
+			}
 		>
 			<Hero.Title>Resum&eacute;</Hero.Title>
 			<Hero.Subtext>

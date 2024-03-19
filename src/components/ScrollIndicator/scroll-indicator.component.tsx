@@ -5,16 +5,21 @@ import styles from "./scroll-indicator.module.scss";
 
 export interface ScrollIndicatorProps {
 	to?: string;
+	/** @defaultValue `center` */
+	scrollPosition?: ScrollLogicalPosition;
 }
 
-export const ScrollIndicator = ({to}: ScrollIndicatorProps) => {
+export const ScrollIndicator = ({
+	to,
+	scrollPosition = "center",
+}: ScrollIndicatorProps) => {
 	const content = <div className={styles["scroll-indicator"]} />;
 
 	return to ? (
 		<a
 			href={to}
 			onClick={onClickSmoothScroll}
-			data-scroll-position="center"
+			data-scroll-position={scrollPosition}
 			role="button"
 			aria-label="Scroll down"
 		>
