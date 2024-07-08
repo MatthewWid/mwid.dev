@@ -21,5 +21,6 @@ jobs:
           username: ${{ secrets.DEPLOY_USER }}
           port: ${{ secrets.DEPLOY_PORT }}
           key: ${{ secrets.DEPLOY_KEY }}
-          source: "out/*"
+          source: "html"
           target: ${{ SECRETS.DEPLOY_PATH }}
+          overwrite: true
