@@ -5,6 +5,7 @@ import {roboto} from "@/assets/fonts/roboto";
 import {Navigation} from "@/components/Navigation";
 import {Contact} from "@/components/Contact";
 import {Footer} from "@/components/Footer";
+import Script from "next/script";
 
 export const metadata: Metadata = {
 	title: {
@@ -33,6 +34,10 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
 				<main>{children}</main>
 				<Contact />
 				<Footer />
+				<Script
+					src="https://umami.mwid.dev/script.js"
+					data-website-id="eeef5c32-fb0a-43b3-879a-e40816df841c"
+				/>
 			</body>
 		</html>
 	);
