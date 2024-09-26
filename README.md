@@ -24,6 +24,21 @@ Build static assets:
 pnpm run build
 ```
 
-# License
+## Environment Variables
+
+Environment variables may be defined within your shell or using a `.env` file.
+
+```sh
+cp ./.env.template ./.env
+```
+
+The following variables are available:
+
+|Variable|Required|Description|
+|-|-|-|
+|`NEXT_PUBLIC_ANALYTICS_SCRIPT_URL`|No|URL of the [Umami](https://umami.is/) tracking script.|
+|`NEXT_PUBLIC_ANALYTICS_WEBSITE_ID`|No|ID of the [Umami](https://umami.is/docs/add-a-website) website entry.|
+
+## License
 
 This project is licensed under the [MIT license](https://opensource.org/license/mit/).
