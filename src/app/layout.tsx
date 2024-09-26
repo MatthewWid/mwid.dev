@@ -26,6 +26,9 @@ export const metadata: Metadata = {
 	},
 };
 
+const ANALYTICS_SCRIPT_URL = process.env.NEXT_PUBLIC_ANALYTICS_SCRIPT_URL;
+const ANALYTICS_WEBSITE_ID = process.env.NEXT_PUBLIC_ANALYTICS_WEBSITE_ID;
+
 export default function RootLayout({children}: {children: React.ReactNode}) {
 	return (
 		<html lang="en">
@@ -34,10 +37,12 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
 				<main>{children}</main>
 				<Contact />
 				<Footer />
-				<Script
-					src="https://umami.mwid.dev/script.js"
-					data-website-id="eeef5c32-fb0a-43b3-879a-e40816df841c"
-				/>
+				{ANALYTICS_SCRIPT_URL && ANALYTICS_WEBSITE_ID && (
+					<Script
+						src={ANALYTICS_SCRIPT_URL}
+						data-website-id={ANALYTICS_WEBSITE_ID}
+					/>
+				)}
 			</body>
 		</html>
 	);
