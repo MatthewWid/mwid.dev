@@ -15,6 +15,9 @@ jobs:
           cache: "pnpm"
       - run: pnpm install
       - run: pnpm run build
+        env:
+          NEXT_PUBLIC_ANALYTICS_SCRIPT_URL: ${{ vars.NEXT_PUBLIC_ANALYTICS_SCRIPT_URL }}
+          NEXT_PUBLIC_ANALYTICS_WEBSITE_ID: ${{ vars.NEXT_PUBLIC_ANALYTICS_WEBSITE_ID }}
       - uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.DEPLOY_HOST }}
